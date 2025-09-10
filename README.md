@@ -5,14 +5,14 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
 [![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
+
+![Cyber](https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif)
+
+---
 
 ### 🖤 About Me
 I'm a black-hat enthusiast in training ⚡  
 💻 Exploring hacking challenges, cybersec, and CTFs.  
 🌱 Currently learning: Reverse engineering & exploit development  
 ⚡ Fun fact: Coffee fuels my hacks ☕
-
-
-
