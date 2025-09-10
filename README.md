@@ -6,15 +6,10 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
-
----
+<!-- tryhackme-badge -->
 
 ### 🖤 About Me
 I'm a black-hat enthusiast in training ⚡  
 💻 Exploring hacking challenges, cybersec, and CTFs.  
 🌱 Currently learning: Reverse engineering & exploit development  
 ⚡ Fun fact: Coffee fuels my hacks ☕
-
----
