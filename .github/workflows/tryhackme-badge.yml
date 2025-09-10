@@ -18,8 +18,7 @@ jobs:
       - name: Add TryHackMe Badge
         run: |
           README_FILE="README.md"
-          BADGE='[![TryHackMe Badge](<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5662904" style='border:none;'></iframe>)](https://tryhackme.com/p/BRAIN404)'
-
+          BADGE='[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)'
 
           if grep -q "<!-- tryhackme-badge -->" "$README_FILE"; then
             sed -i "s|<!-- tryhackme-badge -->|$BADGE|g" "$README_FILE"
