@@ -36,7 +36,13 @@ jobs:
           PROFILE_URL = "https://tryhackme.com/p/BRAIN404"
 
           url = f"https://tryhackme.com/api/v2/badges/public-profile?userPublicId={USER_ID}"
-          data = requests.get(url).json()
+          headers = {"User-Agent": "Mozilla/5.0"}
+          resp = requests.get(url, headers=headers)
+
+          if resp.status_code != 200:
+              raise Exception(f"Erreur API TryHackMe: {resp.status_code}")
+
+          data = resp.json()
 
           username = data['data']['user']['username']
           level = data['data']['user']['level']
