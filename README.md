@@ -20,5 +20,3 @@ I'm a black-hat enthusiast in training ⚡
 ---
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="TryHackMe Badge" />
-
-<img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="TryHackMe Badge" />
