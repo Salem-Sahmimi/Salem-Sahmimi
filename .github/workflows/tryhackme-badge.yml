@@ -1,4 +1,4 @@
-name: TryHackMe Badge Update
+name: Update TryHackMe Badge
 
 on:
   push:
@@ -15,19 +15,51 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Add TryHackMe Badge
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate TryHackMe Badge
         run: |
-          README_FILE="README.md"
-          BADGE='[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)'
+          python3 - <<'EOF'
+          import requests
+          import re
 
-          if grep -q "<!-- tryhackme-badge -->" "$README_FILE"; then
-            sed -i "s|<!-- tryhackme-badge -->|$BADGE|g" "$README_FILE"
-          else
-            echo -e "\n$BADGE" >> "$README_FILE"
-          fi
+          README_FILE = "README.md"
+          USER_ID = "5662904"  # Remplace par ton userPublicId
+          PROFILE_URL = f"https://tryhackme.com/p/BRAIN404"
 
+          url = f"https://tryhackme.com/api/v2/badges/public-profile?userPublicId={USER_ID}"
+          data = requests.get(url).json()
+
+          username = data['data']['user']['username']
+          level = data['data']['user']['level']
+          points = data['data']['user']['points']
+          avatar = data['data']['user']['avatar']
+
+          # Générer le badge Markdown
+          badge_md = f"[![{username} - Level {level} - {points} pts]({avatar})]({PROFILE_URL})"
+
+          # Lire README
+          with open(README_FILE, "r") as f:
+              content = f.read()
+
+          # Remplacer le commentaire
+          if "<!-- tryhackme-badge -->" in content:
+              content = re.sub(r"<!-- tryhackme-badge -->", badge_md, content)
+          else:
+              content += f"\n{badge_md}\n"
+
+          # Écrire README
+          with open(README_FILE, "w") as f:
+              f.write(content)
+          EOF
+
+      - name: Commit changes
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "$README_FILE"
-          git commit -m "update: add TryHackMe badge" || echo "No changes to commit"
+          git add README.md
+          git commit -m "Update TryHackMe badge" || echo "No changes to commit"
           git push
