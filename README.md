@@ -6,7 +6,7 @@
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 ![Root Me](https://img.shields.io/badge/RootMe-THE--AHMED-blue?style=for-the-badge)
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
+<!-- tryhackme-badge -->
 
 ### 🖤 About Me
 I'm a black-hat enthusiast in training ⚡  
@@ -15,4 +15,3 @@ I'm a black-hat enthusiast in training ⚡
 ⚡ Fun fact: Coffee fuels my hacks ☕
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
