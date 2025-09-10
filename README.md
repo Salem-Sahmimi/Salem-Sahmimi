@@ -17,3 +17,5 @@ Here are some ideas to get you started:
 -->
 
 <!-- tryhackme-badge will be inserted here -->
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="TryHackMe Badge" />
