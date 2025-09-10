@@ -14,3 +14,5 @@ I'm a black-hat enthusiast in training ⚡
 💻 Exploring hacking challenges, cybersec, and CTFs.  
 🌱 Currently learning: Reverse engineering & exploit development  
 ⚡ Fun fact: Coffee fuels my hacks ☕
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
