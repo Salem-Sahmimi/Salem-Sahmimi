@@ -24,3 +24,4 @@ jobs:
           committer_username: 'github-actions[bot]'
           committer_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'update: refresh TryHackMe badge'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
