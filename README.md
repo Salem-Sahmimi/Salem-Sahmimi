@@ -1,7 +1,10 @@
 <h1 align="center">Hi🖐🏻! I'm Salem , just Salem</h1>
 
 ###
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
+<!-- tryhackme-badge -->
+
+
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Salem-Sahmimi&show_icons=true&include_all_commits=true&count_private=true&theme=aura&hide_border=false" width="49%" alt="stats graph" />
   <img src="https://streak-stats.demolab.com?user=Salem-Sahmimi&theme=aura&hide_border=false&border_radius=5" width="49%" alt="streak graph" />
@@ -76,4 +79,8 @@
 </div>
 
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/pacman-contribution-graph.svg">
+</picture>
