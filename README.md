@@ -81,3 +81,5 @@
 <img src="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/snake.svg" alt="Snake animation" />
 
 ###
+
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
