@@ -28,3 +28,5 @@ I'm a black-hat enthusiast in training ⚡
 │ Cybersecurity Tools    │
 │ Networking, Linux      │
 └───────────────────────┘
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="TryHackMe Badge" />
