@@ -16,3 +16,5 @@ I'm a black-hat enthusiast in training ⚡
 🌱 Currently learning: Reverse engineering & exploit development  
 ⚡ Fun fact: Coffee fuels my hacks ☕
 
+
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
