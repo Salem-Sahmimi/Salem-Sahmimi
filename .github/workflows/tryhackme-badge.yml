@@ -27,50 +27,37 @@ jobs:
 
       - name: Generate TryHackMe Badge
         run: |
-          python3 - <<'EOF'
-          import requests
-          import re
+          README_FILE="README.md"
+          USER_ID="5662904"
+          PROFILE_URL="https://tryhackme.com/p/BRAIN404"
 
-          README_FILE = "README.md"
-          USER_ID = "5662904"  # Remplace par ton userPublicId
-          PROFILE_URL = "https://tryhackme.com/p/BRAIN404"
+          # Récupérer le JSON
+          DATA=$(curl -s -H "User-Agent: Mozilla/5.0" "https://tryhackme.com/api/v2/badges/public-profile?userPublicId=${USER_ID}")
 
-          url = f"https://tryhackme.com/api/v2/badges/public-profile?userPublicId={USER_ID}"
-          headers = {"User-Agent": "Mozilla/5.0"}
-          resp = requests.get(url, headers=headers)
+          # Vérifier que c'est du JSON valide
+          if ! echo "$DATA" | jq . >/dev/null 2>&1; then
+            echo "Erreur : impossible de récupérer le JSON TryHackMe"
+            exit 1
+          fi
 
-          if resp.status_code != 200:
-              raise Exception(f"Erreur API TryHackMe: {resp.status_code}")
-
-          data = resp.json()
-
-          username = data['data']['user']['username']
-          level = data['data']['user']['level']
-          points = data['data']['user']['points']
-          avatar = data['data']['user']['avatar']
+          USERNAME=$(echo "$DATA" | jq -r '.data.user.username')
+          LEVEL=$(echo "$DATA" | jq -r '.data.user.level')
+          POINTS=$(echo "$DATA" | jq -r '.data.user.points')
+          AVATAR=$(echo "$DATA" | jq -r '.data.user.avatar')
 
           # Générer le badge Markdown cliquable
-          badge_md = f"[![{username} - Level {level} - {points} pts]({avatar})]({PROFILE_URL})"
+          BADGE="[![${USERNAME} - Level ${LEVEL} - ${POINTS} pts](${AVATAR})](${PROFILE_URL})"
 
-          # Lire README
-          with open(README_FILE, "r") as f:
-              content = f.read()
+          # Remplacer dans README
+          if grep -q "<!-- tryhackme-badge -->" "$README_FILE"; then
+            sed -i "s|<!-- tryhackme-badge -->|$BADGE|g" "$README_FILE"
+          else
+            echo -e "\n$BADGE" >> "$README_FILE"
+          fi
 
-          # Remplacer le commentaire
-          if "<!-- tryhackme-badge -->" in content:
-              content = re.sub(r"<!-- tryhackme-badge -->", badge_md, content)
-          else:
-              content += f"\n{badge_md}\n"
-
-          # Écrire README
-          with open(README_FILE, "w") as f:
-              f.write(content)
-          EOF
-
-      - name: Commit changes
-        run: |
+          # Commit
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add "$README_FILE"
           git commit -m "Update TryHackMe badge" || echo "No changes to commit"
           git push
