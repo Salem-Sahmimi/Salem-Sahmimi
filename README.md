@@ -19,4 +19,12 @@ I'm a black-hat enthusiast in training ⚡
 
 ---
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
+### 💼 Skills
+```text
+┌───────────────────────┐
+│ Programming & Scripting│
+├───────────────────────┤
+│ Python, JS, Bash       │
+│ Cybersecurity Tools    │
+│ Networking, Linux      │
+└───────────────────────┘
