@@ -1,8 +1,7 @@
 <h1 align="center">Hi🖐🏻! I'm Salem , just Salem</h1>
 
 ###
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
-
+<!-- tryhackme-badge -->
 
 
 <div align="center">
@@ -73,10 +72,6 @@
 ###
 
 <br clear="both">
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/snake.svg" alt="Snake animation" />
-</div>
 
 
 <picture>
