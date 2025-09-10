@@ -4,9 +4,8 @@
 ![GitHub Stars](https://img.shields.io/github/stars/Salem-Sahmimi?style=social)
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
-![Root Me](https://img.shields.io/badge/RootMe-THE--AHMED-blue?style=for-the-badge)
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
+
 <img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
 
 ### 🖤 About Me
