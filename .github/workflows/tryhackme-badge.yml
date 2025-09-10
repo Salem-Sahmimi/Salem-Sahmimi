@@ -18,7 +18,7 @@ jobs:
       - name: Add TryHackMe Badge
         run: |
           README_FILE="README.md"
-          BADGE='<img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="TryHackMe Badge" />'
+          BADGE='<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />'
 
           if grep -q "<!-- tryhackme-badge -->" "$README_FILE"; then
             sed -i "s|<!-- tryhackme-badge -->|$BADGE|g" "$README_FILE"
