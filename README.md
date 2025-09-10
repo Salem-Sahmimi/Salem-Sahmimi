@@ -1,8 +1,7 @@
 <h1 align="center">Hi ! I'm Salem , just Salem</h1>
 
 ###
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
-
+<!-- tryhackme-badge -->
 <!-- Stats section full width -->
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Salem-Sahmimi&show_icons=true&include_all_commits=true&count_private=true&theme=aura&hide_border=false" width="49%" alt="stats graph" />
@@ -24,7 +23,7 @@
 
 <!-- Activity graph -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Salem-Sahmimi&theme=redical&custom_title=%F0%9F%98%B4%20My%20Activity%20Graph" width="100%" alt="activity-graph graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Salem-Sahmimi&theme=redical&custom_title=%F0%9F%98%B4%20My%20Activity%20Graph" width="105%" alt="activity-graph graph" />
 </div>
 
 ###
