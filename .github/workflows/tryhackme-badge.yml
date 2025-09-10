@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch: {}
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8 * * *'   # mise à jour quotidienne à 08h UTC
 
 jobs:
   update-badge:
@@ -25,3 +25,4 @@ jobs:
           committer_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'update: refresh TryHackMe badge'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          image_path: '<img src="https://tryhackme-badges.s3.amazonaws.com/OMAR404.png" alt="Your Image Badge" />'
