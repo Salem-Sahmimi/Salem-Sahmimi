@@ -17,3 +17,5 @@ I'm a black-hat enthusiast in training ⚡
 ⚡ Fun fact: Coffee fuels my hacks ☕
 
 
+
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
