@@ -15,10 +15,15 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install requests
 
       - name: Generate TryHackMe Badge
         run: |
@@ -28,7 +33,7 @@ jobs:
 
           README_FILE = "README.md"
           USER_ID = "5662904"  # Remplace par ton userPublicId
-          PROFILE_URL = f"https://tryhackme.com/p/BRAIN404"
+          PROFILE_URL = "https://tryhackme.com/p/BRAIN404"
 
           url = f"https://tryhackme.com/api/v2/badges/public-profile?userPublicId={USER_ID}"
           data = requests.get(url).json()
@@ -38,7 +43,7 @@ jobs:
           points = data['data']['user']['points']
           avatar = data['data']['user']['avatar']
 
-          # Générer le badge Markdown
+          # Générer le badge Markdown cliquable
           badge_md = f"[![{username} - Level {level} - {points} pts]({avatar})]({PROFILE_URL})"
 
           # Lire README
