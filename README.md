@@ -6,7 +6,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 
-<!-- TryHackMe Badge -->
+<!-- tryhackme-badge -->
 <img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
 
 ---
@@ -18,15 +18,3 @@ I'm a black-hat enthusiast in training ⚡
 ⚡ Fun fact: Coffee fuels my hacks ☕
 
 ---
-
-### 💼 Skills
-```text
-┌───────────────────────┐
-│ Programming & Scripting│
-├───────────────────────┤
-│ Python, JS, Bash       │
-│ Cybersecurity Tools    │
-│ Networking, Linux      │
-└───────────────────────┘
-
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
