@@ -5,8 +5,8 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 
-
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
+<!-- tryhackme-badge -->
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
 
 ### 🖤 About Me
 I'm a black-hat enthusiast in training ⚡  
@@ -16,4 +16,3 @@ I'm a black-hat enthusiast in training ⚡
 
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
