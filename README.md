@@ -5,6 +5,8 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
+![Root Me](https%3A%2F%2Fimg.shields.io%2Fbadge%2FRootMe-THE--AHMED-red)
+
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png" alt="Your Image Badge" />
 
