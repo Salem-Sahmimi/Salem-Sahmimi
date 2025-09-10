@@ -6,13 +6,13 @@ on:
       - main
   workflow_dispatch: {}
   schedule:
-    - cron: '0 8 * * *'   # mise à jour chaque jour à 08:00 UTC
+    - cron: '0 8 * * *'
 
 jobs:
   update-badge:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # autorise le workflow à modifier ton README
+      contents: write
     steps:
       - name: Checkout profile repo
         uses: actions/checkout@v4
@@ -20,5 +20,7 @@ jobs:
       - name: Generate/Update TryHackMe badge
         uses: p4p1/tryhackme-badge-workflow@main
         with:
-          tryhackme-username: 'OMAR404'
-          readme-file: 'README.md'
+          username: 'OMAR404'
+          committer_username: 'github-actions[bot]'
+          committer_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'update: refresh TryHackMe badge'
