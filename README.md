@@ -5,8 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Linux](https://img.shields.io/badge/Linux-Kali-black)
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
-
+<!-- tryhackme-badge -->
 ---
 
 
@@ -82,5 +81,3 @@
 <img src="https://raw.githubusercontent.com/Salem-Sahmimi/Salem-Sahmimi/output/snake.svg" alt="Snake animation" />
 
 ###
-
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/BRAIN404.png)](https://tryhackme.com/p/BRAIN404)
