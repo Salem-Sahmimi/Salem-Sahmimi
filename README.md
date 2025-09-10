@@ -6,7 +6,7 @@
 <!-- Stats section full width -->
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Salem-Sahmimi&show_icons=true&include_all_commits=true&count_private=true&theme=aura&hide_border=false" width="49%" alt="stats graph" />
-  <img src="https://streak-stats.demolab.com?user=Salem-Sahmimi&theme=aura&hide_border=false&border_radius=5" width="49%" alt="streak graph" />
+  <img src="https://streak-stats.demolab.com?user=Salem-Sahmimi&theme=aura&hide_border=false&border_radius=5" width="50%" alt="streak graph" />
 </div>
 
 <!-- GIF + Languages -->
